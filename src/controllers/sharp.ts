@@ -24,8 +24,8 @@ export async function resizeImage(req:Request,res:Response,next:NextFunction) {
         if (result) {
           req.apiStatus = {
             isSuccess: false,
-            data: "Failed to create patient details",
-            toastMessage: "Failed to create patient details",
+            data: "Failed to Resize",
+            toastMessage: "Failed to Resize",
             error: ErrorCodes[1006],
           };
           next();
@@ -34,8 +34,8 @@ export async function resizeImage(req:Request,res:Response,next:NextFunction) {
         else {
             req.apiStatus = {
               isSuccess: true,
-              data: "patient details Added Successfully",
-              toastMessage: "patient details Added Successfully",
+              data: "Resize Success",
+              toastMessage: "Resize Success",
             };
             next();
             return;
