@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "c645eb60-1328-4f78-ac68-0b807fa1156d",
+		"name": "sharp-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39950002",
+		"_collection_link": "https://apiexelon.postman.co/workspace/api_exelon-Workspace~0143ceca-ff5a-43cb-85eb-cb5c595ceaae/collection/39950002-c645eb60-1328-4f78-ac68-0b807fa1156d?action=share&source=collection_link&creator=39950002"
+	},
+	"item": [
+		{
+			"name": "resize",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"inputPath\":\"H:\\\\work_space\\\\exelon\\\\sharpdependency\\\\src\\\\image\\\\forInput\\\\JavaScriptSimplified.jpg\",\r\n  \"outputPath\":\"H:\\\\work_space\\\\exelon\\\\sharp dependency\\\\src\\\\image\\\\forOutput\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/image/resize",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"image",
+						"resize"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
